@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website</title>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <ul class="nav">
+    <li class="nav-item">
+    <%= link_to "Home",root_path, class: "nav-link"%>
+    </li>
+
+    <li class="nav-item">
+    <%= link_to "About",about_path, class: "nav-link"%>
+    </li>
+
+    <li class="nav-item">
+    <%= link_to "Pages",pages_path, class: "nav-link"%>
+    </li>
+
+    <li class="nav-item">
+    <%= link_to "Resume",resume_path, class: "nav-link"%>
+    </li>
+    <li class="nav-item">
+    <%= link_to "Blogs",posts_path, class: "nav-link"%>
+    </li>
+    
+  </ul>
+  <div class="col-sm">
+    <%= yield %>
+  </body>
+</html>

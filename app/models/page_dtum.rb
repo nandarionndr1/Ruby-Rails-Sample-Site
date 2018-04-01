@@ -1,0 +1,2 @@
+class PageDtum < ApplicationRecord
+end
